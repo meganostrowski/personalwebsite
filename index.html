@@ -55,6 +55,43 @@
     .right .links a:hover {
       color: #41184a; /* plum */
     }
+    /* Mobile view */
+    @media (max-width: 768px) {
+      body {
+        height: 100vh;
+        overflow: hidden;
+      .container {
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        }
+      .left {
+        flex: none;
+        width: 100%;
+        height: 250px;
+        background: url('headshot_cropped.png') center/cover no-repeat;
+        }
+      .right {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+        }
+      .right h1 {
+        font-size: 2em;
+        }
+      .right h2 {
+        font-size: 1em;
+        }
+      .right p {
+        font-size: 1em;
+        }
+      .right .links a {
+        font-size: 1em;
+        }
+      }
+    }
   </style>
 </head>
 <body>
